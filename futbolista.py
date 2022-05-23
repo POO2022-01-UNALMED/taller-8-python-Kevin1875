@@ -6,11 +6,11 @@ from persona import Persona
 class Futbolista(Deportista):
   
   listaFutbolistas=[]
-  def __init__(self,nombre,edad,altura,sexo,añosPracticando,golesMarcados,rojas,piernaHabil):
+  def __init__(self,nombre,edad,altura,sexo,añosPracticando,golesMarcados,tarjetasRojas,piernaHabil):
     
     super().__init__(nombre,edad,altura,sexo,"Futbol",añosPracticando)
     self.golesMarcados=golesMarcados
-    self.rojas=rojas
+    self.tarjetasRojas=tarjetasRojas
     self.piernaHabil=piernaHabil
     Futbolista.listaFutbolistas.append(self)
 
